@@ -1,0 +1,96 @@
+
+
+.btn,
+.btn:link,
+.btn:visited {
+    border: 1.5px solid #FFFFFF;
+    padding: 1.5rem 1rem;
+    color: #FFFFFF;
+    width: 15rem;
+    border-radius: 5rem;
+    background: none;
+    transition: all .2s;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(#000, .2);
+}
+
+.btn:active{
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(#000, .2);
+}
+.headar-btn__activ{
+    display: none;
+}
+.headar-btn {
+    display: block;
+}
+
+.withe-btn {
+    background-color: #FFFFFF;
+    color: #112D57;
+}
+
+.blue-btn{
+    background: #03D6F3;
+    color: #FFFFFF;
+    padding: 1.5rem 0.8rem;
+    font-size: 1.4rem;
+}
+
+.border-blue-btn{
+    border: 1px solid #03D6F3; 
+    color: #03D6F3;
+    padding: 1.5rem 0.8rem;
+    font-size: 1.4rem;
+}
+.aaaaaaa {
+    z-index: 1000000000000;
+}
+.long-btn {
+    width: 23rem;
+    color: #000;
+    background: #EFEFEF;
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 901px) {
+    .headar-btn__activ{
+        display: block;
+    }
+    .headar-btn{
+        display: block;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .headar-btn {
+        margin-right: -25rem;
+    }
+
+}
+@media screen and (max-width:750px) {
+    .headar-btn {
+        margin-right: -10rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .headar-btn {
+        margin-right: -5rem;
+    }
+}
+@media screen and (max-width:570px) {
+    .headar-btn {
+        padding: .5rem;
+        margin-right: 0rem;
+        width: 5.5rem;
+        font-size: 1.3rem;
+    }
+}

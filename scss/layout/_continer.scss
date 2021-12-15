@@ -1,0 +1,13 @@
+
+$continer-width: 114rem;
+
+.continer {
+    max-width: $continer-width;
+    margin: 0 auto;
+
+    &__footer {
+        max-width: $continer-width;
+        margin: 0 auto;
+    }
+}
+

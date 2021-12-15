@@ -1,0 +1,102 @@
+.form {
+  z-index: 1;
+  box-shadow: 0px 0px 15px #000;
+  border-radius: 22px;
+  background: #ffffff;
+  width: 300px;
+  padding: 3rem 7rem 3rem 7rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  @media screen and (max-width:570px) {
+    padding: 0rem 1rem 1rem 1rem;
+  }
+
+  span {
+    font-size: 5rem;
+    color: black;
+    transition: all .1s;
+    cursor: pointer;
+  }
+
+  h2{
+    color: black;
+    font-size: 3.5rem;
+  }
+}
+.form-anim {
+  animation: form-anim .7s;
+  display: block;
+}
+  
+.form-input{
+  margin: 3px;
+  width: 250px;
+  height: 42px;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 0px 1px #000;
+}
+
+.form-button{
+  cursor: pointer;
+  margin: 1rem 0 0 0;
+  width: 247px;
+  height: 41px;
+  text-align: center;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 0px 2px 8px #000;
+  transition: all .3s;
+  
+  &:hover{
+    transform: translateY(-.5rem);
+    box-shadow: 0px 3px 8px #000;
+  }
+  &:active{
+    transform: translateY(0rem);
+    box-shadow: 0px 1px 8px #000;
+  }
+}
+.windowError{
+  width: 300px;
+  height: 140px;
+  position: absolute;
+  background: #0e0a35;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  animation: mymove .5s ease-out .1s;
+  animation-fill-mode: backwards; 
+  z-index: 500;
+
+  span {
+    cursor: pointer;
+    color:red;
+    font-size:35px;
+    float:right;
+    margin:10px
+  }
+  h1 {
+    text-align:center;
+    transform:translateY(50px);
+  }
+}
+  
+@keyframes mymove {
+  from {transform: translate(-50%, -500%);}
+  to {transform: translate(-50%, -50%);}
+}
+
+.form span {
+  &:hover{
+    transform: translateY(-2px) scale(1.1);
+  }
+  &:active{
+    transform: translateY(0)  scale(1);
+  }
+}

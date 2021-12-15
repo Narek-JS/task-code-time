@@ -1,0 +1,47 @@
+.section1-content{
+    margin: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width:900px) {
+        margin: 0 3rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 5.4rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.2px;
+        text-align: center;
+        max-width: 50rem;
+    }
+
+    &__paragrap {
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #E5E5E5;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    &__img-section1 {
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (max-width: 570px) {
+        &__title{
+            font-size: 3.4rem;
+        }
+        &__wrapper-buttons{
+            display: flex;
+            flex-direction: column;
+
+            .btn:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+        
+    }
+}

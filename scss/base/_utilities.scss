@@ -1,0 +1,53 @@
+
+
+
+
+
+.title{
+    cursor: default;
+    transition: all .3s;
+    &:hover{
+        transform: skewY(1.5deg) skewX(10deg) scale(1.1); 
+        text-shadow: 0.5rem 1rem 2rem rgb(0 0 0 / 20%);
+    }
+}
+
+.u-margin-bottom-8 { 
+    margin-bottom: 8rem !important; 
+    @include respond(tab-port) { margin-bottom: 5rem !important; }
+}
+.u-margin-right-2 {
+    margin-right: 2rem !important;
+}
+.u-margin-bottom-4 {
+    margin-bottom: 4rem !important; 
+    @include respond(tab-port) { margin-bottom: 3rem !important; }
+}
+
+.u-margin-bottom-2 { margin-bottom: 2rem !important; }
+
+.u-margin-top-8 { margin-top: 8rem !important; }
+
+.u-margin-top-10 { margin-top: 10rem !important; }
+
+.transition-10{
+    transform: translateY(-10rem);
+}
+.transition-13{
+    transform: translateY(-13rem);
+    
+    @media screen and (max-width: 900px) {
+        transform: translateY(-18rem);
+    }
+}
+
+.transition-15{
+    transform: translateY(-12.5rem);
+    @media screen and (max-width:900px) {
+        transform: translateY(-12.5rem);
+    }
+}
+
+.anim-img{ 
+    animation: comeAnim 1.5s;
+}
