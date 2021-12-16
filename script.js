@@ -213,10 +213,6 @@ iconMobileMenuIcon.addEventListener('click', () => {
   }
 })
 
-getStartedBtn.addEventListener('click',() => {
-  location.href = location.href +"?tandz"
-})
-
 
 
 function initMap() {
