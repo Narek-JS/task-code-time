@@ -109,7 +109,6 @@ const section6ContentBoxes = document.querySelector('.section6-content__wrapper-
 const section2ContentBoxes = document.querySelector('.section2-content__wrapper-boxes');
 const navBarInFooter = document.querySelector('.footer-box-1 nav');
 const pathToSocialNetworks = document.querySelector('.footer__contact__wrapper-3');
-
 let map, infoWindow;
 
 
@@ -199,19 +198,23 @@ const createPathsToSocialNetworks = (function () {
 })();
 
 iconMobileMenuIcon.addEventListener('click', () => {
-    if(navBar.classList.value.indexOf('header__mobile-manu__navbar__activ') !== -1) {
-        navBar.classList.value = 'header__mobile-manu__navbar';
-        singUpBtn.classList.remove('headar-btn__activ');
-        singUpBtn.classList.add('headar-btn');
-        logo.classList.remove('logo__activ');
-        logo.classList.add('logo');
-    }else {
-        navBar.classList.value = 'header__mobile-manu__navbar__activ';
-        singUpBtn.classList.add('headar-btn__activ') 
-        singUpBtn.classList.remove('headar-btn') 
-        logo.classList.add('logo__activ');
-        logo.classList.remove('logo');
-    }
+  if(navBar.classList.value.indexOf('header__mobile-manu__navbar__activ') !== -1) {
+    navBar.classList.value = 'header__mobile-manu__navbar';
+    singUpBtn.classList.remove('headar-btn__activ');
+    singUpBtn.classList.add('headar-btn');
+    logo.classList.remove('logo__activ');
+    logo.classList.add('logo');
+  }else {
+    navBar.classList.value = 'header__mobile-manu__navbar__activ';
+    singUpBtn.classList.add('headar-btn__activ') 
+    singUpBtn.classList.remove('headar-btn') 
+    logo.classList.add('logo__activ');
+    logo.classList.remove('logo');
+  }
+})
+
+getStartedBtn.addEventListener('click',() => {
+  location.href = location.href +"?tandz"
 })
 
 

@@ -104,6 +104,7 @@ form.addEventListener("submit", (event) => {
         cleanInputs()
     }
 })
+
 ////////////////////////////////////////////////////////////////////////////
 function showLocation (position) {
     currentLocation = {
